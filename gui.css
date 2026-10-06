@@ -1,3 +1,14 @@
 .big{
     font-size: 100px;
 }
+.card {
+    background-color: rgba(0, 0, 0, 0.75); 
+    border: 10px solid black;
+    border-radius: 20px; 
+}
+
+#scrolling{
+    height: 500px;
+    
+    overflow-y: auto;
+}

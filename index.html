@@ -10,35 +10,59 @@
   <link href="./gui.css" rel="stylesheet">
 </head>
 
-<body>
-
-
+<body class="overflow-hidden h-100" style=" background-color: darkblue;">
 
   <div class="bs-docs-section">
     <div class="row">
+
       <div class="col-sm-3">
         <div class="bs-component">
-          <h1 class="big">Hello, world!</h1>
+          <div class="card vh-100 " style="border-radius: 0px 20px 20px 0px">
+            <h1 class="big">Hello, world!</h1>
+          </div>
         </div>
       </div>
+
       <div class="col-sm-8">
         <div class="bs-component">
-          <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" style="height: 9dvh">
             <div class="container-fluid">
               <div class="input-group mb-3">
                 <input type="text" id="searchBar" class="form-control" placeholder="Search"
                   aria-label="Search Bar" aria-describedby="button-addon2">
-                <button class="btn btn-primary" type="button" id="searchBtn">Button</button>
+                <button class="btn btn-primary" type="button" id="searchBtn">Search</button>
               </div>
             </div>
           </nav>
+          <div class="bs-docs-section">
+            <div class="row">
+
+              <div class="col-sm-4" style="padding: 3dvh">
+                <div class="card" style="height: 85dvh">
+                </div>
+              </div>
+
+              <div class="col-sm-4" style="padding: 3dvh">
+                <div class="card" style="height: 85dvh">
+                </div>
+              </div>
+
+              <div class="col-sm-4" style="padding: 3dvh">
+                <div class="card" style="height: 85dvh"> 
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="col-sm-1">
         <div class="bs-component">
           <h2>O</h2>
         </div>
       </div>
+
     </div>
   </div>
 
