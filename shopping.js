@@ -10,6 +10,12 @@ $(document).ready(function () {
         //     console.error('Request failed:', textStatus, errorThrown);
         // });
 
+        var displayedData = {
+            displayTitle: data[0].title,
+            displayPrice: data[0].price,
+            displarRating: data[0]
+
+        }
 
     });
 });

@@ -6,14 +6,21 @@ $(document).ready(function () {
     var cart = [];
     var wishlist = [];
 
-    var itemName = "ITEM NAME";  
-    var image = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSb8nIy98Ly48KmBz0Qum7VhizUUfMrMY8zBr7KGT8gVup9atw_jYQ28kBh_xdDrUjSAjvF-xZ31qy6q8iYjKJgxLnpnPJWx8a8a-j5XjFrTMn9yOPbfuI";
+    var displayedData = [
+        {
+            "title": data[0].title,
+            "cost": data[0].extracted_price,
+            "image": data[0].thumbnail
+        }
+    ]
+
+    var itemName = displayedData[0].title;
+    var image = displayedData[0].image;
     var url = "https://www.google.com/search?ibp=oshop&q=Macbook&prds=catalogid:592209059139430148,productid:11531162310095970272,headlineOfferDocid:16026323275453799959,imageDocid:14971461360516834628,rds:PC_8602998232814770163|PROD_PC_8602998232814770163,gpcid:8602998232814770163,mid:576462562025329966,pvt:hg&hl=en&gl=us&udm=28"
-    var price = 10.99;
-    var oldPrice = 100.99;
+    var price = displayedData[0].cost;
+    var oldPrice = data[0].extracted_old_price;
     var rating = 1.5;
     var ratingColor;
-
 
 
     $("#budget").text(budget.toFixed(2));
