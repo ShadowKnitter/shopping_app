@@ -22,12 +22,12 @@
             <div class="bs-component" style="height: 33dvh">
               <h1 class="title centered">$<span id="budget"></span></h1>
               <div class="row">
-                <div class="col-sm-7">
-                  <button type="button" class="btn btn-primary iconBtn" >
+                <div class="col-sm-6">
+                  <button id="cartBtn" type="button" class="btn btn-primary iconBtn" style="padding: 1dvh 0px;">
                     <img src="img/Cart.png" alt="Cart" class="align-middle" style="height: 18dvh; width: 18dvh;">
                   </button>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-6">
                     <h2 id="sideBarSpacing" class="small"><span id="items"></span></h2>
                     <h2 id="sideBarSpacing" class="small">$<span id="fCost"></span></h2>
                 </div>
@@ -55,7 +55,7 @@
             <div class="bs-component" style="height: 33dvh">
               <h1 class="title centered">Wishlist</h1>
               <div class="bs-component centered">
-                <button type="button" class="btn btn-primary iconBtn" >
+                <button id="wishlistBtn" type="button" class="btn btn-primary iconBtn" >
                   <img src="img/Wishlist.png" alt="Wishlist" class="align-middle centered" style="height: 20dvh; width: 20dvh;">
                 </button>
               </div>
@@ -86,8 +86,8 @@
                     <button class="btn btn-primary iconBtn centered" type="button" id="linkBtn" style="padding: 0px 0px;">
                       <img id="image" alt="image failed to load" class="align-middle" style="height: 25dvh; width: 25dvh;">
                     </button>
-                    <h1 class="title centered" style="margin: 0px;">$<span id="totalCost"></span></h1>
-                    <h3 class="tiny centered" style="margin: 0px;">$<span id="cost"></span>&nbsp;+ $<span id="shipping"></span></h3>
+                    <h1 class="title centered" style="margin: 0px;">$<span id="price"></span></h1>
+                    <h3 class="tiny centered" style="margin: 0px;"><s>$<span id="oldPrice"></span></s>&nbsp;&nbsp;&nbsp;<span id="percentOff"></span>% Off!</h3>
                     <h2 class="small centered" style="padding-top: 3dvh;">Rating</h2>
                     <h3 class="tiny centered"><span id="rating"></span>/5</h3>
                     <div class="progress">

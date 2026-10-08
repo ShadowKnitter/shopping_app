@@ -43,7 +43,7 @@ body{
 }
 
 #sideBarSpacing{
-    padding: 2dvh;
+    padding: 2dvh 0px;
 }
 #settingsBtn{
     height:10dvh;
