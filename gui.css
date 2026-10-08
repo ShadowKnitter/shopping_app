@@ -1,17 +1,51 @@
-.big{
-    font-size: 100px;
+body{
+    background-color: darkblue;
+
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/6784.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    font-size: 8dvh;
+}
+.small{
+    font-size: 4dvh;
+}
+.tiny{
+    font-size: 2dvh;
 }
 .card {
     background-color: rgba(0, 0, 0, 0.75); 
     border: 10px solid black;
     border-radius: 20px; 
 }
+.search{
+    background-color: rgba(0, 0, 0, 0.75); 
+    border: 10px solid black;
+    border-radius: 5dvh; 
+    height: 5dvh;
+}
+.centered{
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.iconBtn{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.progress{
+    margin: 0px 2dvw;
+}
 
+#sideBarSpacing{
+    padding: 2dvh;
+}
 #settingsBtn{
     height:10dvh;
     width: 10dvh;
-}
-#scrolling{
-    height: 500px;
-    overflow-y: auto;
 }

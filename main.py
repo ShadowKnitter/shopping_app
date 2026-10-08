@@ -28,7 +28,7 @@ CRTL + C
 # -------------------------------------------------------------------------
 
 app = FastAPI()
-#app.mount("/assets", StaticFiles(directory="assets"), name="assets")
+app.mount("/img", StaticFiles(directory="img"), name="img")
 
 # SETUP HTML FILES
 @app.get("/")
@@ -43,6 +43,9 @@ async def read_index():
 @app.get("/shopping.js")
 async def read_index():
     return FileResponse('shopping.js')
+@app.get("/sideBar.js")
+async def read_index():
+    return FileResponse('sideBar.js')
 
 # temporary search results
 @app.get("/testSearch.js")
@@ -64,4 +67,3 @@ def apisearch(search: str):
 
 if __name__ == '__main__':
     uvicorn.run('main:app', host='0.0.0.0', port=8000)
-
