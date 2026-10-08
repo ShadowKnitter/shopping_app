@@ -16,6 +16,9 @@ $(document).ready(function () {
     $("#itemName").text(itemName);
     $("#image").attr("src", image);
     $("#url").attr("url", url);
+    $("#linkBtn").on("click", function () {
+        window.open(url, '_blank');
+    });
     $("#cost").text(cost);
     $("#shipping").text(shipping);
     $("#totalCost").text(cost + shipping);
