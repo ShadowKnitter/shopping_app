@@ -21,7 +21,10 @@ $(document).ready(function () {
     var image = displayedData[0][3];
     var url = "https://www.google.com/search?ibp=oshop&q=Macbook&prds=catalogid:592209059139430148,productid:11531162310095970272,headlineOfferDocid:16026323275453799959,imageDocid:14971461360516834628,rds:PC_8602998232814770163|PROD_PC_8602998232814770163,gpcid:8602998232814770163,mid:576462562025329966,pvt:hg&hl=en&gl=us&udm=28"
     var price = displayedData[0][1];
-    var oldPrice = displayedData[0][2];
+    var oldPrice = price;
+    if (displayedData[0][2] != null){
+        oldPrice = displayedData[0][2];
+    }
     var rating = displayedData[0][4];
     var ratingColor;
 
